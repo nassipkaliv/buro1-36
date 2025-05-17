@@ -590,6 +590,132 @@ section {
   backdrop-filter: blur(13.600000381469727px);
 }
 
+.contacts-container {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 24px;
+}
+
+.contact-block {
+  position: relative;
+  height: 196px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-left: 1px solid #92989e;
+  border-top: 1px solid #92989e;
+  border-bottom: 1px solid #92989e;
+  /* Убираем стандартное скругление углов */
+  border-bottom-left-radius: 0;
+}
+
+.border-right {
+  border-right: 1px solid #92989e;
+}
+
+.contact-subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #92989e;
+}
+
+/* Исправляем опечатку: contanct-title -> contact-title */
+.contact-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #333;
+}
+
+/* Стили для крестиков */
+.plus-top-left,
+.plus-top-right,
+.plus-bottom-left,
+.plus-bottom-right {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  z-index: 99;
+}
+
+/* Позиционирование крестиков */
+.plus-top-left {
+  top: -8.5px; /* Половина высоты крестика, чтобы он был ровно на углу */
+  left: -8.5px;
+}
+
+.plus-top-right {
+  top: -8.5px;
+  right: -8.5px;
+}
+
+.plus-bottom-left {
+  bottom: -8.5px;
+  left: -8.5px;
+}
+
+.plus-bottom-right {
+  bottom: -8.5px;
+  right: -8.5px;
+}
+
+/* Обрезаем углы border, чтобы крестики выглядели естественно */
+.contact-block::before,
+.contact-block::after {
+  content: "";
+  position: absolute;
+  background-color: #fff; /* Цвет фона, чтобы перекрыть border */
+  width: 20px;
+  height: 20px;
+}
+
+.contact-block::before {
+  top: -1px;
+  left: -1px;
+  clip-path: polygon(0 0, 100% 0, 0 100%); /* Обрезаем угол */
+}
+
+.contact-block::after {
+  top: -1px;
+  right: -1px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%); /* Обрезаем угол */
+}
+
+/* Аналогично для нижних углов */
+.contact-block {
+  position: relative;
+}
+
+.contact-block > div::before,
+.contact-block > div::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-block > div::before {
+  bottom: -1px;
+  left: -1px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.contact-block > div::after {
+  bottom: -1px;
+  right: -1px;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
 @media (max-width: 1024px) {
   .gray-card {
     width: 190px;
