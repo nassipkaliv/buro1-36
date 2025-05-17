@@ -460,6 +460,136 @@ section {
   color: #fff;
 }
 
+.stages {
+  margin-bottom: 145px;
+}
+
+.zayavka-container {
+  background: #00458a;
+  padding-top: 65px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.zayavka-top {
+  margin-right: 65px;
+  margin-left: 65px;
+}
+
+.zayavka-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.zayavka-text {
+  text-wrap: balance;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #eef4fa;
+  max-width: 415px;
+  margin-left: auto;
+}
+
+.zayavka-form {
+  margin-top: 40px;
+}
+
+.form-container {
+  display: flex;
+  gap: 25px;
+}
+
+.form-control {
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #070707;
+}
+
+.form-control::placeholder {
+  opacity: 0.3;
+}
+
+.form-btn {
+  background: #fff;
+  width: 360px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 245%;
+  text-align: center;
+  color: #3f2e21;
+  border: none;
+}
+
+.form-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.zayavka-gallery {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zayavka-img {
+  position: relative;
+  z-index: 1;
+}
+
+.small-img {
+  height: 196px;
+  top: 33px;
+}
+
+.zayavka-circle {
+  position: absolute;
+  z-index: 5;
+  top: -24%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43%;
+  text-align: center;
+  color: #387099;
+  position: absolute;
+}
+
+.circle-text span {
+  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+  line-height: 10%;
+}
+
+.circle-svg {
+  border-radius: 100%;
+  fill: rgba(246, 248, 251, 0.72);
+  backdrop-filter: blur(13.600000381469727px);
+}
+
 @media (max-width: 1024px) {
   .gray-card {
     width: 190px;
