@@ -380,10 +380,10 @@ section {
 }
 
 .advantages-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 255px);
+  display: flex;
   margin-top: 40px;
   height: 250px;
+  width: 100%;
 }
 
 
@@ -397,6 +397,7 @@ section {
   border-bottom: 3px solid rgb(0, 47, 108, 0.5);
   border-right: 3px solid rgb(0, 47, 108, 0.5);
   position: relative;
+  width: 250px;
 }
 
 .advantage-card-text {
@@ -425,11 +426,42 @@ section {
 }
 
 .gray-card {
-  width: 263px;
+  position: relative;
+  z-index: 10;
+  width: 16.5rem;
   height: 264px;
   background: #d9d9d9;
 }
 
 .schema-img {
   margin-top: 27px;
+}
+
+.advantages {
+  margin-bottom: 60px;
+}
+
+.stage-container {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-btn {
+  border-radius: 10px;
+  padding: 12px 10px;
+  white-space: nowrap;
+  background: var(--2);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .gray-card {
+    width: 190px;
+  }
 }
