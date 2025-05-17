@@ -160,6 +160,7 @@ img {
   line-height: 245%;
   text-align: center;
   color: #fff;
+  border: 0;
 }
 
 .hero-right-bg {
@@ -382,7 +383,6 @@ section {
 .advantages-cards {
   display: flex;
   margin-top: 40px;
-  height: 250px;
   width: 100%;
 }
 
@@ -983,12 +983,14 @@ section {
   }
 
   .ad-plus-left-bottom {
+    display: block;
     position: absolute;
     bottom: -10px;
     left: -10px;
   }
 
   .ad-plus-left-top {
+    display: block;
     position: absolute;
     top: -10px;
     left: -10px;
@@ -1041,7 +1043,122 @@ section {
     padding-right: 30px;
     padding-top: 25px;
   }
+}
 
+@media (max-width: 768px) {
+  .hero-bg {
+    position: absolute;
+    top: -40px;
+    left: -130px;
+    width: 50%;
+    z-index: -1;
+  }
+
+  .hero-btn {
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    position: relative;
+    margin-top: 0%;
+  }
+
+  .hero-img-2 {
+    position: absolute;
+    top: -7%;
+    right: 1%;
+    z-index: 1;
+  }
+
+  .hero-right-bg {
+    position: absolute;
+    z-index: -1;
+    width: 72%;
+    right: -9%;
+    top: 0;
+  }
+
+  .title-row {
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: start !important;
+    gap: 40px;
+  }
+
+  .section-divider {
+    display: none;
+  }
+
+  .card-container-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .small-card, .big-card {
+    width: 100%;
+  }
+
+  .advantages-cards {
+    flex-direction: column;
+  }
+
+  .advantage-card {
+    border-left: 3px solid rgb(0, 47, 108, 0.5);
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .ad0-card {
+    display: flex !important;
+  }
+
+  .ad0-btn {
+    border-radius: 0;
+    line-height: 144%;
+  }
+
+  .schema-img {
+    display: none;
+  }
+
+  .zayavka-container {
+    padding-top: 90px;
+  }
+
+  .zayavka-top {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .zayavka-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .zayavka-img {
+    display: none;
+  }
+
+  .main-img {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    top: 0px;
+  }
+
+  .zayavka-circle {
+    position: absolute;
+    z-index: 5;
+    top: -20%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 
