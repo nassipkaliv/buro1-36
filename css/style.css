@@ -111,9 +111,9 @@ img {
 
 .hero-bg {
   position: absolute;
-  top: -130px;
-  left: -115px;
-  width: 45%;
+  top: -84px;
+  left: -14px;
+  width: 34%;
   z-index: -1;
 }
 
@@ -319,12 +319,17 @@ section {
   justify-content: space-between;
 }
 
+.card-info:hover .card-info-text {
+  color: var(--1);
+}
+
 .card-info-text {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
   color: #000;
+  transition: all 0.3s ease;
 }
 
 .card-info-text span {
@@ -399,6 +404,7 @@ section {
   border-right: 3px solid rgb(0, 47, 108, 0.5);
   position: relative;
   width: 250px;
+  padding-bottom: 0 !important;
 }
 
 .advantage-card-text {
@@ -836,7 +842,25 @@ section {
 }
 
 .ad-plus-left-bottom, .ad-plus-left-top {
-  display: none;
+  display: block;
+}
+
+.ad0-card {
+  border-left: 3px solid rgb(0, 47, 108, 0.5);
+}
+
+.ad-plus-left-bottom {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+
+.ad-plus-left-top {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 .only-mobile {
@@ -849,6 +873,7 @@ section {
 
 .ad0-btn {
   display: none;
+  border-radius: 0;
 }
 
 .stage-text span {
@@ -1084,19 +1109,6 @@ section {
     border-left: 3px solid rgb(0, 47, 108, 0.5);
   }
 
-  .ad-plus-left-bottom {
-    display: block;
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-  }
-
-  .ad-plus-left-top {
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-  }
 
   .footer-logo {
     max-width: 130px;
@@ -1378,10 +1390,10 @@ section {
 
   .hero-img-2 {
     position: absolute;
-    top: -78%;
-    right: 1%;
+    top: -105%;
+    right: -2%;
     z-index: 1;
-    width: 44%;
+    width: 40%;
   }
 
   .no-btn {
