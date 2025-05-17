@@ -182,6 +182,10 @@ section {
   margin-bottom: 200px;
 }
 
+.gallery {
+  margin-bottom: 130px;
+}
+
 .section-subtitle {
   font-family: var(--font-family);
   font-weight: 400;
@@ -368,7 +372,64 @@ section {
     content: '';
 }
 
+.advantages {
+  background: url("../assets/img/advantages-bg.png");
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 35px;
+}
 
-.swiper-pagination-bullet-active {
-  background: #333;
+.advantages-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 255px);
+  margin-top: 40px;
+  height: 250px;
+}
+
+
+.advantage-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  border-top: 3px solid rgb(0, 47, 108, 0.5);
+  border-bottom: 3px solid rgb(0, 47, 108, 0.5);
+  border-right: 3px solid rgb(0, 47, 108, 0.5);
+  position: relative;
+}
+
+.advantage-card-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #333;
+}
+
+.advantage-card-text span {
+  font-weight: 600;
+}
+
+.ad-plus-top {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.ad-plus-bottom {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+
+.gray-card {
+  width: 263px;
+  height: 264px;
+  background: #d9d9d9;
+}
+
+.schema-img {
+  margin-top: 27px;
 }
