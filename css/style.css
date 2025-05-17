@@ -1482,6 +1482,9 @@ section {
   .footer-block {
     justify-content: center;
   }
-
+  
+  .contacts-container {
+    padding: 0;
+  }
   
 }
