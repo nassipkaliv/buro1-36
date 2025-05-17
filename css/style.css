@@ -442,7 +442,7 @@ section {
 }
 
 .stage-container {
-  margin-top: 70px;
+  margin-top: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,6 +458,72 @@ section {
   font-size: 16px;
   text-align: center;
   color: #fff;
+  position: absolute;
+  top: 66%;
+  left: -2%;
+}
+
+.stage-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #000;
+  margin-left: 20px;
+}
+
+.second-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  top: -19%;
+  left: 24%;
+}
+
+.third-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  top: -19%;
+  left: 49%;
+}
+
+.fourth-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  top: -19%;
+  left: 75%;
+}
+
+.fifth-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  bottom: -3%;
+  right: 9%;  
+}
+
+.sixth-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  bottom: -8%;
+  right: 34%;  
+}
+
+.seventh-stage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  bottom: -8%;
+  right: 60%;  
 }
 
 .stages {
