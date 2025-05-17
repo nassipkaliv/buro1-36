@@ -33,3 +33,20 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
+
+
+  const openServicesBtn = document.getElementById('open-services');
+  const backBtn = document.getElementById('back-to-main');
+  const mainMenu = document.getElementById('main-menu');
+  const servicesMenu = document.getElementById('services-menu');
+
+  openServicesBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainMenu.classList.add('d-none');
+    servicesMenu.classList.remove('d-none');
+  });
+
+  backBtn.addEventListener('click', () => {
+    servicesMenu.classList.add('d-none');
+    mainMenu.classList.remove('d-none');
+  });

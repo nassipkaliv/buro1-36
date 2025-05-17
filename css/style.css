@@ -902,7 +902,43 @@ section {
   color: #fff;
 }
 
+.back-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  height: 60px; 
+  padding: 0 12px;
+}
 
+.back-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 20px;
+  color: #001432;
+  pointer-events: none;
+}
+
+.off-body {
+  margin-top: 55px;
+  padding: 0 20px;
+}
+
+.off-img {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.off-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
 
 @media (max-width: 1400px) {
   .navbar-nav, .header-right {
@@ -1342,7 +1378,7 @@ section {
 
   .hero-img-2 {
     position: absolute;
-    top: -93%;
+    top: -78%;
     right: 1%;
     z-index: 1;
     width: 44%;

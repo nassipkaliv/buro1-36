@@ -42,6 +42,7 @@
   </div>
 </nav>
 
+<!-- Offcanvas -->
 <div class="offcanvas offcanvas-start offcanvas-fullscreen" tabindex="-1" id="mainMenu">
   <div class="offcanvas-header justify-content-between">
     <a class="navbar-brand" href="#">
@@ -49,8 +50,10 @@
     </a>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
   </div>
-  <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
-    <a class="offcanvas-a active" href="#">Услуги</a>
+
+  <!-- Main menu -->
+  <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center" id="main-menu">
+    <a class="offcanvas-a active" href="#" id="open-services">Услуги</a>
     <a class="offcanvas-a" href="#">О нас</a>
     <a class="offcanvas-a" href="#">Портфолио</a>
     <a class="offcanvas-a" href="#">Оплата и доставка</a>
@@ -58,7 +61,45 @@
     <div class="mt-5 offcanvas-tel">+7 921 438 2005</div>
     <button class="order-btn mt-5 w-100">Сделать заказ</button>
   </div>
+
+  <!-- Submenu "Услуги" -->
+  <div class="offcanvas-body d-none flex-column px-0" id="services-menu">
+    <div class="back-container">
+      <button id="back-to-main" class="btn text-white me-3 p-0 border-0" style="background: none; font-size: 24px;">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_343_6711)">
+            <path d="M9.785 16.2502L16.49 22.9552L14.7225 24.7227L5 15.0002L14.7225 5.27766L16.49 7.04516L9.785 13.7502L25 13.7502L25 16.2502L9.785 16.2502Z" fill="#001432" />
+          </g>
+          <defs>
+            <clipPath id="clip0_343_6711">
+              <rect width="30" height="30" fill="white" transform="translate(30 30) rotate(-180)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <div class="back-text">Услуги</div>
+    </div>
+    <div class="row g-3 justify-content-center text-center off-body">
+      <div class="col-6">
+        <img src="assets/img/off1.png" class="off-img" alt="Вагоны">
+        <div class="off-text">Вагоны</div>
+      </div>
+      <div class="col-6">
+        <img src="assets/img/off2.png" class="off-img" alt="Коробы для вина">
+        <div class="off-text">Коробы для вина</div>
+      </div>
+      <div class="col-6">
+        <img src="assets/img/off3.png" class="off-img" alt="Шкатулки">
+        <div class="off-text">Шкатулки</div>
+      </div>
+      <div class="col-6">
+        <img src="assets/img/off4.png" class="off-img" alt="Гравировка">
+        <div class="off-text">Гравировка</div>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <!-- Hero Section -->
 <section class="hero">
