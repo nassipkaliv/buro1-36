@@ -855,6 +855,55 @@ section {
   font-weight: 600;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
+.offcanvas-fullscreen {
+  width: 100% !important;
+  background-color: #001233;
+  color: white;
+}
+
+.offcanvas-header .btn-close {
+  color: #fff !important;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
+.off-logo {
+  max-width: 140px;
+}
+
+.offcanvas-a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.offcanvas-a.active {
+  font-weight: 800;
+}
+
+.offcanvas-a:hover {
+  font-weight: 800;
+}
+
+.offcanvas-tel {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff;
+}
+
+
+
 @media (max-width: 1400px) {
   .navbar-nav, .header-right {
     gap: 15px;

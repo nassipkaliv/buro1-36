@@ -34,13 +34,31 @@
       <div class="header-tel">+7 921 438 2005</div>
       <button class="order-btn">Сделать заказ</button>
     </div>
-    <button class="burger-menu">
+    <button class="burger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 8H28V10.6667H4V8ZM4 14.6667H28V17.3333H4V14.6667ZM4 21.3333H28V24H4V21.3333Z" fill="white" />
       </svg>
     </button>
   </div>
 </nav>
+
+<div class="offcanvas offcanvas-start offcanvas-fullscreen" tabindex="-1" id="mainMenu">
+  <div class="offcanvas-header justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/header-logo.png" class="off-logo" alt="head-logo">
+    </a>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+    <a class="offcanvas-a active" href="#">Услуги</a>
+    <a class="offcanvas-a" href="#">О нас</a>
+    <a class="offcanvas-a" href="#">Портфолио</a>
+    <a class="offcanvas-a" href="#">Оплата и доставка</a>
+    <a class="offcanvas-a" href="#">Контакты</a>
+    <div class="mt-5 offcanvas-tel">+7 921 438 2005</div>
+    <button class="order-btn mt-5 w-100">Сделать заказ</button>
+  </div>
+</div>
 
 <!-- Hero Section -->
 <section class="hero">
