@@ -173,3 +173,99 @@ img {
   position: absolute;
   top: 20px;
 }
+
+.hero {
+  margin-bottom: 15.625rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #92989e;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000;
+}
+
+.section-btn {
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  background: var(--2);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 245%;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.section-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+  margin-left: auto;
+}
+
+.info-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.stats-block {
+  width: 403px;
+  height: 409px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  background-image: url("../assets/img/setka.png");  
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.stats-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 4%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.stats-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 87%;
+  text-align: center;
+  color: #333;
+  text-wrap: balance;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.details {
+  right: 25%;
+  position: absolute;
+  top: -20%;
+}
