@@ -261,7 +261,8 @@
           </div>
         </div>
         <div class="dir-card big-card">
-          <img src="assets/img/card2.png" alt="card-img" class="card-img">
+          <img src="assets/img/card2.png" alt="card-img" class="card-img only-desktop">
+          <img src="assets/img/card-img-mob1.png" alt="card-img" class="card-img only-mobile">
           <div class="card-info">
             <div class="card-info-text">Подарочные вагончики</div>
             <div class="card-info-arrow">
@@ -272,7 +273,8 @@
       </div>
       <div class="card-container-row">
         <div class="dir-card big-card">
-          <img src="assets/img/card3.png" alt="card-img" class="card-img">
+          <img src="assets/img/card3.png" alt="card-img" class="card-img only-desktop">
+          <img src="assets/img/card-img-mob2.png" alt="card-img" class="card-img only-mobile">
           <div class="card-info">
             <div class="card-info-text">Контейнеры</div>
             <div class="card-info-arrow">
@@ -335,56 +337,90 @@
     <div class="section-title">
      Преимущества
     </div>
-    <div class="advantages-cards">
-      <div class="advantage-card ad0-card">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-bottom">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
-        <img src="assets/img/ad0.png" alt="ad-img" class="advantage-card-img">
-        <div class="advantage-card-text">
-          Создание моделей <br><span>1 к 36, 1 к 32</span>
-        </div>
-         <button class="hero-btn ad0-btn my-0 w-100">Смотреть примеры</button>
-      </div>
-      <div class="advantage-card ad1-card">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-bottom">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
-        <img src="assets/img/ad1.png" alt="ad-img" class="advantage-card-img">
-        <div class="advantage-card-text">
-          <span>Индивидуальный <br> подход</span> к каждому <br> заказу
-        </div>
-      </div>
-      <div class="advantage-card">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
-        <img src="assets/img/ad2.png" alt="ad-img" class="advantage-card-img">
-        <div class="advantage-card-text">
-         Работаем с <br> <span>минимальными <br> тиражами </span>
-        </div>
-      </div>
-      <div class="advantage-card">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
-        <img src="assets/img/ad3.png" alt="ad-img" class="advantage-card-img">
-        <div class="advantage-card-text">
-         Разработка <br> <span>индивидуальной упаковки</span> <br> под  запросы каждого <br> клиента
-        </div>
-      </div>
-      <div class="advantage-card card-last">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
-        <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
-        <img src="assets/img/ad4.png" alt="ad-img" class="advantage-card-img">
-        <div class="advantage-card-text">
-          Работаем с <br><span>экологичными <br>материалами</span>
-        </div>
-      </div>
+<div class="advantages-cards d-flex flex-wrap" role="tablist">
+  <!-- Карточки — табы -->
+  <div class="advantage-card ad0-card" role="tab" id="adv0-tab" aria-controls="tab0" aria-selected="true">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-bottom">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
+    <img src="assets/img/ad0.png" alt="ad-img" class="advantage-card-img">
+    <div class="advantage-card-text">
+      Создание моделей <br><span>1 к 36, 1 к 32</span>
     </div>
+    <button class="hero-btn ad0-btn my-0 w-100" data-bs-toggle="tab" data-bs-target="#tab0" type="button" role="tab" aria-controls="tab0" aria-selected="false">Смотреть примеры</button>
+  </div>
+
+  <div class="advantage-card ad1-card" role="tab" id="adv1-tab" aria-controls="tab1" aria-selected="false">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-left-bottom">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
+    <img src="assets/img/ad1.png" alt="ad-img" class="advantage-card-img">
+    <div class="advantage-card-text">
+      <span>Индивидуальный <br> подход</span> к каждому <br> заказу
+    </div>
+    <button class="hero-btn ad0-btn my-0 w-100" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="false">Смотреть примеры</button>
+  </div>
+
+  <div class="advantage-card" role="tab" id="adv2-tab" aria-controls="tab2" aria-selected="false">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
+    <img src="assets/img/ad2.png" alt="ad-img" class="advantage-card-img">
+    <div class="advantage-card-text">
+     Работаем с <br> <span>минимальными <br> тиражами </span>
+    </div>
+    <button class="hero-btn ad0-btn my-0 w-100" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Смотреть примеры</button>
+  </div>
+
+  <div class="advantage-card" role="tab" id="adv3-tab" aria-controls="tab3" aria-selected="false">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
+    <img src="assets/img/ad3.png" alt="ad-img" class="advantage-card-img">
+    <div class="advantage-card-text">
+     Разработка <br> <span>индивидуальной упаковки</span> <br> под  запросы каждого <br> клиента
+    </div>
+    <button class="hero-btn ad0-btn my-0 w-100" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Смотреть примеры</button>
+  </div>
+
+  <div class="advantage-card card-last" role="tab" id="adv4-tab" aria-controls="tab4" aria-selected="false">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-top">
+    <img src="assets/img/plus.svg" alt="plus" class="ad-plus-bottom">
+    <img src="assets/img/ad4.png" alt="ad-img" class="advantage-card-img">
+    <div class="advantage-card-text">
+      Работаем с <br><span>экологичными <br>материалами</span>
+    </div>
+    <button class="hero-btn ad0-btn my-0 w-100" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">Смотреть примеры</button>
+  </div>
+</div>
+
+<div class="tab-content mt-4">
+  <div class="tab-pane fade show active" id="tab0" role="tabpanel" aria-labelledby="adv0-tab">
     <div class="schema-img">
       <img src="assets/img/schema.png" alt="schema">
     </div>
+  </div>
+  <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="adv1-tab">
+    <div class="schema-img">
+      <img src="assets/img/poezd.jpg" alt="schema">
+    </div>
+  </div>
+  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="adv2-tab">
+    <div class="schema-img">
+      <img src="assets/img/schema.png" alt="schema">
+    </div>
+  </div>
+  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="adv3-tab">
+    <div class="schema-img">
+      <img src="assets/img/schema.png" alt="schema">
+    </div>
+  </div>
+  <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="adv4-tab">
+    <div class="schema-img">
+      <img src="assets/img/schema.png" alt="schema">
+    </div>
+  </div>
+</div>
   </div> 
 </section>
 
@@ -543,6 +579,7 @@
     <img src="assets/img/plus.svg" class="plus-top-right" alt="plus">
     <img src="assets/img/plus.svg" class="plus-bottom-left" alt="plus">
     <img src="assets/img/plus.svg" class="plus-bottom-right" alt="plus">
+    <img src="assets/img/addressplashka.png" class="adress-plashka" alt="adress-plashka">
     <div class="contact-subtitle">Адрес</div>
     <div class="contact-title">г. Санкт-Петербург, <br>Коломяжский проспект, д. 10, лит. АВ</div>
   </div>

@@ -412,13 +412,27 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
   border-top: 3px solid rgb(0, 47, 108, 0.5);
   border-bottom: 3px solid rgb(0, 47, 108, 0.5);
   border-right: 3px solid rgb(0, 47, 108, 0.5);
   position: relative;
+  padding-top: 25px;
   width: 250px;
   padding-bottom: 0 !important;
+}
+
+.advantage-card .hero-btn {
+  position: relative;
+  margin-top: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.advantage-card:hover .hero-btn {
+  opacity: 1;
+  pointer-events: auto;
+  margin-top: auto !important;
 }
 
 .advantage-card-text {
@@ -428,6 +442,7 @@ section {
   line-height: 120%;
   text-align: center;
   color: #333;
+  margin-top: 25px;
 }
 
 .advantage-card-text span {
@@ -444,6 +459,12 @@ section {
   position: absolute;
   bottom: -10px;
   right: -10px;
+}
+
+.adress-plashka {
+  position: absolute;
+  top: 10%;
+  right: 10%;
 }
 
 .gray-card {
@@ -886,7 +907,7 @@ section {
 }
 
 .ad0-btn {
-  display: none;
+  opacity: 0;
   border-radius: 0;
 }
 
@@ -1273,6 +1294,21 @@ section {
 
   .small-card, .big-card {
     width: 100%;
+    height: 100%;
+  }
+
+  .zayavka-gallery {
+    margin-top: 90px;
+  }
+
+  .circle-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60%;
+    text-align: center;
+    color: #387099;
+    position: absolute;
   }
 
   .advantages-cards {
@@ -1445,16 +1481,16 @@ section {
 
   .hero-bg {
     position: absolute;
-    top: -40px;
-    left: -40px;
-    width: 50%;
+    top: -16px;
+    left: -147px;
+    width: 81%;
     z-index: -1;
   }
 
   .hero-img-2 {
     position: absolute;
-    top: -105%;
-    right: -2%;
+    top: -93%;
+    right: -5%;
     z-index: 1;
     width: 40%;
   }
@@ -1474,7 +1510,7 @@ section {
 
   .hero-img {
     position: relative;
-    margin-top: -17%;
+    margin-top: -24%;
     right: -19%;
   }
 
@@ -1528,9 +1564,10 @@ section {
   }
 
   .poezd {
-    width: 120%;
+    width: 137%;
     position: relative;
-    right: -20%;
+    right: 1%;
+    max-width: none;
   }
 
   .right {
@@ -1645,6 +1682,14 @@ section {
   
   .contacts-container {
     padding: 0;
+  }
+
+  .adress-plashka {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 64px;
+    height: 64px;
   }
   
 }
